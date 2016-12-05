@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="200dip"
+            android:layout_height="200dip" />
+
+        <LinearLayout
+            android:id="@+id/ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_normal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="名称：" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:text="奶粉" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_normal" >
+
+                <TextView
+                    android:id="@+id/data_zihua"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="生产日期：" />
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:text="奶粉" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_normal" >
+
+                <TextView
+                    android:id="@+id/cnashu_zihua"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="规格参数：" />
+
+                <TextView
+                    android:id="@+id/tv_canshu"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:text="奶粉" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll_changjia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_normal" >
+
+                <TextView
+                    android:id="@+id/changjia_zihua"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="生产厂家：" />
+
+                <TextView
+                    android:id="@+id/tv_changjia"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:text="奶粉" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_normal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="简介：" />
+
+                <TextView
+                    android:id="@+id/tv_jianjie"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:text="奶粉" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

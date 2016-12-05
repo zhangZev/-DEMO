@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 考勤头部  用户信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_normal" >
+
+                <TextView
+                    android:id="@+id/tv_userIcon"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:background="@drawable/icon_bluecircle"
+                    android:gravity="center"
+                    android:text="宪文"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/gj_d" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="张宪文"
+                        android:textColor="@color/text_color_a"
+                        android:textSize="@dimen/gj_d" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:gravity="center"
+                        android:text="考勤组：考勤"
+                        android:textColor="@color/text_color_c"
+                        android:textSize="@dimen/gj_c" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_redbordercircleframe"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:drawableRight="@drawable/icon_bluearrowdown"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_big"
+                    android:paddingRight="@dimen/padding_big"
+                    android:paddingTop="@dimen/padding_normal"
+                    android:text="2016.11.29"
+                    android:textColor="@color/header"
+                    android:textSize="@dimen/gj_d"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="#E4E4E4" />
+
+            <TextView
+                android:id="@+id/tv_toptext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_big"
+                android:text="愉悦的工作，从到公司的第一刻开始"
+                android:textColor="@color/text_color_c"
+                android:textSize="@dimen/gj_f" />
+
+            <include layout="@layout/include_kq" />
+
+            <com.benefit.buy.library.views.NoScrollListView
+                android:id="@+id/listview_kq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dip" >
+            </com.benefit.buy.library.views.NoScrollListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

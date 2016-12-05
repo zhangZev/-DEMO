@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_normal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_up"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/icon_bluecirclesmall"
+            android:gravity="center"
+            android:text="上"
+            android:textColor="@color/white"
+            android:textSize="@dimen/gj_d" />
+
+        <View
+            android:id="@+id/view_"
+            android:layout_width="2dip"
+            android:layout_height="270dip"
+            android:background="@color/line"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_normal" >
+
+        <TextView
+            android:id="@+id/tv_shangbantime"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:gravity="center_vertical"
+            android:text="上班时间 09:00"
+            android:textColor="@color/text_color_c"
+            android:textSize="@dimen/gj_f" />
+
+        <LinearLayout
+            android:id="@+id/ll_zaobuka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_transblackcircleframe"
+                android:drawablePadding="@dimen/padding_normal"
+                android:drawableRight="@drawable/icon_bluearrowright"
+                android:padding="@dimen/padding_normal"
+                android:text="申请补卡"
+                android:textColor="@color/header"
+                android:textSize="@dimen/gj_c" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_normal"
+                android:background="@drawable/btn_transblackcircleframe"
+                android:drawablePadding="@dimen/padding_normal"
+                android:drawableRight="@drawable/icon_bluearrowright"
+                android:padding="@dimen/padding_normal"
+                android:text="更新打卡"
+                android:textColor="@color/header"
+                android:textSize="@dimen/gj_c" />
+        </LinearLayout>
+
+        <!-- 上班打卡 -->
+
+        <LinearLayout
+            android:id="@+id/ll_zaodaka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="180dip"
+                android:layout_height="180dip"
+                android:background="@drawable/icon_orangecircle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_shangban"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签到打卡"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/gj_g"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_zaotime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:textColor="#EAEAEA"
+                    android:textSize="@dimen/gj_d" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_normal" >
+
+                <ImageView
+                    android:id="@+id/img_zaowhere"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:src="@drawable/icon_greengougou" />
+
+                <TextView
+                    android:id="@+id/tv_zaowhere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:lines="2"
+                    android:text="已进入考勤范围：启林创客小镇"
+                    android:textColor="@color/text_color_c"
+                    android:textSize="@dimen/gj_c" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
